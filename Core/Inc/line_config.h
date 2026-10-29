@@ -42,12 +42,12 @@
 
 /* ==================== 循迹转向控制 ==================== */
 
-#define LINE_DEFAULT_KP            180.0f
+#define LINE_DEFAULT_KP            155.0f
 /* 默认循迹比例系数 P，可通过 LKP 修改。
  * 根据横向偏差产生纠偏转向；过大可能导致左右摆动。
  */
 
-#define LINE_DEFAULT_KD            6.0f
+#define LINE_DEFAULT_KD            20.0f
 /* 默认循迹微分系数 D，可通过 LKD 修改。
  * 根据滤波后的偏差变化率产生转向修正，用于抑制摆动。
  * 过大也可能放大探头跳变造成的转向波动。
@@ -81,7 +81,7 @@
 
 /* ==================== 正常循迹速度 ==================== */
 
-#define LINE_DEFAULT_TEST_SPEED    350.0f
+#define LINE_DEFAULT_TEST_SPEED    330.0f
 /* RUN 连续循迹模式的默认正常速度上限，单位 mm/s。
  * 可通过串口 LSPD 修改。
  */
